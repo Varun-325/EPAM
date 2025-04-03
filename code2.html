@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Print Styles Example</title>
+    <style>
+        /* General Styles */
+        body {
+            font-family: Arial, sans-serif;
+            padding: 20px;
+            color: #333;
+            background-color: #f9f9f9;
+        }
+
+        header, main, footer {
+            border: 1px solid #ccc;
+            padding: 10px;
+            margin-bottom: 10px;
+            background-color: white;
+            border-radius: 5px;
+        }
+
+        header {
+            text-align: center;
+            background-color: #007bff;
+            color: white;
+            padding: 15px;
+            border-radius: 5px;
+        }
+
+        h1 {
+            margin: 0;
+        }
+
+        /* Styling the ad section */
+        .ads {
+            background-color: #f4f4f4;
+            padding: 10px;
+            border: 1px solid #ddd;
+        }
+
+        /* Link styles */
+        a {
+            color: #007bff;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        /* Button styles */
+        .btn {
+            display: inline-block;
+            padding: 10px 15px;
+            background-color: #007bff;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            text-align: center;
+        }
+
+        .btn:hover {
+            background-color: #0056b3;
+        }
+
+        /* Print Styles */
+        @media print {
+            body {
+                color: black;
+                font-size: 12pt;
+                padding: 0;
+                background: white;
+            }
+
+            header {
+                text-align: center;
+            }
+
+            .ads, footer {
+                display: none;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Welcome to the Print-Friendly Web Page</h1>
+        <p>This content will be styled for both screen and print.</p>
+    </header>
+
+    <main>
+        <section class="content">
+            <p>This section contains important information that should appear in the print view.</p>
+            <a href="#">Learn More</a>
+            <br><br>
+            <button class="btn">Click Me</button>
+        </section>
+        <section class="ads">
+            <p>This is an ad or extra content that should be hidden when printing.</p>
+        </section>
+    </main>
+
+    <footer>
+        <p>Made By <b>Kondoju Varun</b></p>
+    </footer>
+</body>
+</html>

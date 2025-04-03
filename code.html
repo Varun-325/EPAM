@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Simple HTML5 Page</title>
+    <style>
+        table, th, td {
+            border: 1px solid black;
+            border-collapse: collapse;
+        }
+        th, td {
+            padding: 8px;
+        }
+    </style>
+</head>
+<center>
+<body>
+
+    <header>
+        <h1>My Simple Webpage</h1>
+        <nav>
+            <a href="#home">Home</a><br>
+            <a href="#about">About</a><br>
+            <a href="#contact">Contact</a><br>
+        </nav>
+    </header>
+
+    <main>
+        <section id="home">
+            <h2>Welcome to My Page</h2>
+            <img src="https://imgs.search.brave.com/StxZqDwuGvPvwZmsUtalg_3jQ_iHTnUD6WUi9rZ_Tg8/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly90aHVt/YnMuZHJlYW1zdGlt/ZS5jb20vYi9waG90/by1neW9tZWktaGlt/ZWppbWEtd2FsbC1h/cnQtaW5mb3JtYXRp/b24tcG9zdGVyLW9z/YWthLWphcGFuLW5v/di1kZW1vbi1zbGF5/ZXItJUU5JUFDJUJD/JUU2JUJCJTg1JUUz/JTgxJUFFJUU1JTg4/JTgzLWtpbWV0c3Ut/bm8teWFpYmEtY2hh/cmFjdGVyLTIzMzk5/ODgxNi5qcGc" alt="Sample Image" width="300">
+        </section>
+
+        <section id="about">
+            <h2>Sample Table</h2>
+            <table>
+                <tr>
+                    <th>Name</th>
+                    <th>Age</th>
+                </tr>
+                <tr>
+                    <td>Varun</td>
+                    <td>20</td>
+                </tr>
+                <tr>
+                    <td>Raiden</td>
+                    <td>9000</td>
+                </tr>
+            </table>
+        </section>
+
+        <section id="contact">
+            <h2>Contact Form</h2>
+            <form action="#" method="post">
+                <input type="text" id="name" name="name" required><br><br>
+
+                <input type="text" id="rollnumber" name="rollnumber" required><br><br>
+
+                <input type="submit" value="Submit">
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>Made By <b>Kondoju Varun</b></p>
+    </footer>
+
+</body>
+</center>
+</html>
